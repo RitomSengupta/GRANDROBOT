@@ -33,7 +33,7 @@ class Config(object):
     WHITELIST_USERS = get_user_list('elevated_users.json', 'whitelists')  # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
     CERT_PATH = None
     PORT = 5000
-    DEL_CMDS = False  #Delete commands that users dont have access to, like delete /ban if a non admin uses it.
+    DEL_CMDS = True  #Delete commands that users dont have access to, like delete /ban if a non admin uses it.
     STRICT_GBAN = True
     STRICT_GMUTE = True
     WORKERS = 8  # Number of subthreads to use. Set as number of threads your processor uses
