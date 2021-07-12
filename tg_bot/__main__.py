@@ -144,10 +144,10 @@ def start(bot: Bot, update: Update, args: List[str]):
                                                                                    InlineKeyboardButton(text="🧑‍💻My Creator🧑‍💻",
                                                                        url="t.me/RitomSengupta")],
                                                                                    [InlineKeyboardButton(text="Add me in your group",
-                                                                       url="t.me/{}?startgroup=true".format(bot.username)),
+                                                                       url="t.me/{}?startgroup=true".format(bot.username))],
                                                                                    [InlineKeyboardButton(text="Support Group",
-                                                                       url="t.me/joinchat/sPsWixbqTK4xM2Rl")],
-                                                                                 ]])
+                                                                       url="t.me/joinchat/sPsWixbqTK4xM2Rl")]
+                                                                                 ]]))
 
     else:
         update.effective_message.reply_text("Dear MAKAUTIAN, How can I help you?😇")
