@@ -27,7 +27,7 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 **Hello {}, My Name is {}!** 
-I am an **SUPERB**  group management bot.
+I am a group management bot. Made with ❤️ by Makaut students.
 You can find the list of available commands with /help.
 
 """
@@ -145,13 +145,13 @@ def start(bot: Bot, update: Update, args: List[str]):
                                                                        url="t.me/RitomSengupta")],
                                                                                    [InlineKeyboardButton(text="Add me in your group",
                                                                        url="t.me/{}?startgroup=true".format(bot.username)),
+                                                                                   [InlineKeyboardButton(text="Support Group",
+                                                                       url="t.me/joinchat/sPsWixbqTK4xM2Rl")]
                                                                                  ]]))
-                                                                      
-                                                              
 
     else:
-        update.effective_message.reply_text("Yuss, I am Already ONline")
-
+        update.effective_message.reply_text("Dear MAKAUTIAN, How can I help you?😇")
+ 
 
 def send_start(bot, update):
     #Try to remove old message
